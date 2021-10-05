@@ -1,16 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-function Section(props) {
+function Section({
+  backgroundImg,
+  titles,
+  description,
+  leftBtnText,
+  RightBtnText,
+}) {
   return (
-    <Wrap bgImage={props.backgroundImg}>
+    <Wrap bgImage={backgroundImg}>
       <ItemText>
-        <h1>{props.titles}</h1>
-        <p>{props.description}</p>
+        <h1>{titles}</h1>
+        <p>{description}</p>
       </ItemText>
       <Buttons>
         <ButtonGroup>
-          <LeftButton>{props.leftBtnText}</LeftButton>
-          <RightButton>{props.RightBtnText}</RightButton>
+          <LeftButton>{leftBtnText}</LeftButton>
+          {RightBtnText && <RightButton>{RightBtnText}</RightButton>}
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>

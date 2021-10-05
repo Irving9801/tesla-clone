@@ -26,11 +26,24 @@ function Home() {
         rightBtnText="Existing inventory"
       />
       <Section
-        titles="Model Y"
-        description="Order Online for Touchless Delvery"
-        backgroundImg="model-y.jpg"
-        leftBtnText="Custom Order"
-        rightBtnText="Existing inventory"
+        titles="Lowest Cost Solar Panels in America"
+        description="Money-back guarantee"
+        backgroundImg="solar-panel.jpg"
+        leftBtnText="Order now"
+        rightBtnText="Learn more"
+      />
+      <Section
+        titles="Solar for New Roofs"
+        description="Solar Roof Costs Less Than a New "
+        backgroundImg="Solar-roof.jpg"
+        leftBtnText="Order now"
+        rightBtnText="Learn more"
+      />
+      <Section
+        titles="Accessories"
+        description=""
+        backgroundImg="accessories.jpg"
+        leftBtnText="Shop now"
       />
     </Container>
   );
