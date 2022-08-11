@@ -9,20 +9,20 @@ function Header() {
   const cars = useSelector(selectCars);
   return (
     <Container>
-      <a>
+      <a href="!#">
         <img src="/images/logo.svg" alt="" />
       </a>
       <Menu>
         {cars &&
           cars.map((car, index) => (
-            <a key={index} href="#">
+            <a key={index} href="!#">
               {car}
             </a>
           ))}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="!#">Shop</a>
+        <a href="!#">Tesla Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -32,7 +32,7 @@ function Header() {
         {cars &&
           cars.map((car, index) => (
             <li key={index}>
-              <a href="#">{car} </a>
+              <a href="!#">{car} </a>
             </li>
           ))}
       </BurgerNav>
